@@ -22,9 +22,14 @@ sap.ui.define([
 			var binding = list.getBinding("items");
 			binding.filter(filters);
 		},
-		VaibhavShakkarwal: function()
+		VaibhavShakkarwal: function(oEvent)
 		{
 			alert("Hello");
+			var oSelectedItem = oEvent.getSource();
+			var oContext = oSelectedItem.getBindingContext("products");
+    var sPath = oContext.getPath();
+    var oProductDetailPanel = this.getView().byId("productDetailsPanel");
+    oProductDetailPanel.bindElement({ path: sPath, model: "products" });
 		}
 		// },
 		
