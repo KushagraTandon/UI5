@@ -1,0 +1,176 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Kushagra_23.Kushagra_23.controller.View1" displayBlock="true">
+	<sap.ui.layout:ResponsiveSplitter xmlns:sap.ui.layout="sap.ui.layout" defaultPane="__pane0" id="splitter0">
+		<sap.ui.layout:rootPaneContainer>
+			<sap.ui.layout:PaneContainer id="container0">
+				<sap.ui.layout:panes>
+					<sap.ui.layout:SplitPane requiredParentWidth="50" id="pane0">
+						<sap.ui.layout:content>
+							<Panel height="80%" backgroundDesign="Solid" id="panel0" accessibleRole="Region" width="50%">
+								<layoutData>
+									<sap.ui.layout:SplitterLayoutData id="data18"/>
+								</layoutData>
+								<Panel xmlns="sap.m" width="auto" expandable="true" expanded="true" id="panel0_1571891000221">
+									<headerToolbar>
+										<Toolbar id="toolbar1">
+											<Title text="Employees"/>
+											<ToolbarSpacer/>
+										</Toolbar>
+									</headerToolbar>
+									<Bar>
+										<contentLeft>
+											<SearchField search="handleSearch" liveChange="handleSearch" enableSuggestions="true"/>
+										</contentLeft>
+									</Bar>
+									<content>
+										<StandardListItem title="Vaibhav Shakkarwal" id="text5" press=".VaibhavShakkarwal" type="Navigation" unread="true"/>
+										<StandardListItem title="Priyal Chotwani" id="text6" press=".PriyalChotwani" type="Navigation" unread="true" />
+										<StandardListItem title="Himanshu Dewan" id="text7" press=".HimanshuDewan" type="Navigation" unread="true" />
+										<StandardListItem title="Manika Sharma" id="text8" press=".ManikaSharma" type="Navigation" unread="true" />
+									</content>
+								</Panel>
+							</Panel>
+						</sap.ui.layout:content>
+					</sap.ui.layout:SplitPane>
+					<sap.ui.layout:SplitPane requiredParentWidth="50" id="pane1">
+						<sap.ui.layout:content>
+							<Panel height="80%" backgroundDesign="Transparent" id="panel1" width="100%">
+								<layoutData>
+									<sap.ui.layout:SplitterLayoutData id="data20"/>
+								</layoutData>
+								<content>
+									<IconTabBar selectedKey="__xmlview0--filter1" id="bar0">
+										<items>
+											<IconTabFilter text="Personal Details" id="filter0" icon="sap-icon://account" iconColor="Critical" design="Horizontal">
+												<content>
+													<HBox width="100%" id="hbox0">
+														<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
+															<sap.ui.layout.form:formContainers>
+																<sap.ui.layout.form:FormContainer title="Personal Data" id="container1">
+																	<sap.ui.layout.form:formElements>
+																		<sap.ui.layout.form:FormElement label="Emp Id" id="element1">
+																			<sap.ui.layout.form:fields>
+																				<Input width="100%" id="input1"/>
+																			</sap.ui.layout.form:fields>
+																		</sap.ui.layout.form:FormElement>
+																		<sap.ui.layout.form:FormElement label="Name" id="element4">
+																			<sap.ui.layout.form:fields>
+																				<Input width="100%" id="input4"/>
+																			</sap.ui.layout.form:fields>
+																		</sap.ui.layout.form:FormElement>
+																		<sap.ui.layout.form:FormElement label="Email Id" id="element2">
+																			<sap.ui.layout.form:fields>
+																				<Input width="100%" id="input2"/>
+																			</sap.ui.layout.form:fields>
+																		</sap.ui.layout.form:FormElement>
+																		<sap.ui.layout.form:FormElement label="Gender" id="element3">
+																			<RadioButtonGroup xmlns="sap.m" columns="1" id="group0">
+																				<buttons>
+																					<RadioButton text="Male" id="button0"/>
+																					<RadioButton text="Female" id="button1"/>
+																				</buttons>
+																			</RadioButtonGroup>
+																		</sap.ui.layout.form:FormElement>
+																	</sap.ui.layout.form:formElements>
+																</sap.ui.layout.form:FormContainer>
+															</sap.ui.layout.form:formContainers>
+															<sap.ui.layout.form:layout>
+																<sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+															</sap.ui.layout.form:layout>
+														</sap.ui.layout.form:Form>
+														<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form1">
+															<sap.ui.layout.form:formContainers>
+																<sap.ui.layout.form:FormContainer title="Organization" id="container2">
+																	<sap.ui.layout.form:formElements>
+																		<sap.ui.layout.form:FormElement label="Organization Name" id="element5">
+																			<sap.ui.layout.form:fields>
+																				<Input width="100%" id="input5"/>
+																			</sap.ui.layout.form:fields>
+																		</sap.ui.layout.form:FormElement>
+																		<sap.ui.layout.form:FormElement label="Designation" id="element6">
+																			<sap.ui.layout.form:fields>
+																				<Input width="100%" id="input6"/>
+																			</sap.ui.layout.form:fields>
+																		</sap.ui.layout.form:FormElement>
+																		<sap.ui.layout.form:FormElement label="Reporting Person" id="element7">
+																			<sap.ui.layout.form:fields>
+																				<Input width="100%" id="input7"/>
+																			</sap.ui.layout.form:fields>
+																		</sap.ui.layout.form:FormElement>
+																		<sap.ui.layout.form:FormElement label="Location" id="element8">
+																			<RadioButtonGroup xmlns="sap.m" columns="1" id="group1">
+																				<buttons>
+																					<RadioButton text="Dwarka" id="button2"/>
+																					<RadioButton text="Noida" id="button3"/>
+																					<RadioButton text="Mumbai" id="button4"/>
+																					<RadioButton text="Pune" id="button5"/>
+																				</buttons>
+																			</RadioButtonGroup>
+																		</sap.ui.layout.form:FormElement>
+																	</sap.ui.layout.form:formElements>
+																</sap.ui.layout.form:FormContainer>
+															</sap.ui.layout.form:formContainers>
+															<sap.ui.layout.form:layout>
+																<sap.ui.layout.form:ResponsiveGridLayout id="layout1"/>
+															</sap.ui.layout.form:layout>
+														</sap.ui.layout.form:Form>
+													</HBox>
+												</content>
+											</IconTabFilter>
+											<IconTabFilter text="Core Skills" icon="sap-icon://task" iconColor="Critical" id="filter1" design="Horizontal">
+												<content>
+													<ComboBox xmlns="sap.m" id="box0">
+														<items>
+															<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="Python" id="item4"/>
+															<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Java" id="item5"/>
+															<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="C" id="item6"/>
+															<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="C++" id="item7"/>
+															<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="R" id="item8"/>
+															<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Ruby" id="item9"/>
+															<core:Item xmlns:core="sap.ui.core" key="item-1-key" text="GO" id="item10"/>
+															<core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Javascript" id="item11"/>
+														</items>
+													</ComboBox>
+												</content>
+											</IconTabFilter>
+											<IconTabFilter text="Language" icon="sap-icon://notification-2" iconColor="Critical" id="filter2" design="Horizontal">
+												<content>
+													<VBox width="100%" direction="Column" id="vbox0">
+														<items>
+															<Label text="{i18n>text}" width="100%" id="label0" design="Bold"/>
+															<CheckBox xmlns="sap.m" text="English" id="box0_1571755579794" textAlign="Center" wrapping="true"/>
+															<Slider xmlns="sap.m" value="1" id="slider0" max="3" enableTickmarks="true" min="1" width="25%">
+																<ResponsiveScale tickmarksBetweenLabels="1"/>
+															</Slider>
+															<CheckBox xmlns="sap.m" text="Hindi" selected="false" id="box0_1571755579795"/>
+															<Slider xmlns="sap.m" value="1" id="slider1" max="3" enableTickmarks="true" min="1" width="25%">
+																<ResponsiveScale tickmarksBetweenLabels="1"/>
+															</Slider>
+															<CheckBox xmlns="sap.m" text="French" selected="false" id="box0_1571755579796"/>
+															<Slider xmlns="sap.m" value="1" id="slider2" max="3" enableTickmarks="true" min="1" width="25%">
+																<ResponsiveScale tickmarksBetweenLabels="1"/>
+															</Slider>
+															<CheckBox xmlns="sap.m" text="German" selected="false" id="box0_1571755579797"/>
+															<Slider xmlns="sap.m" value="1" id="slider3" max="3" enableTickmarks="true" min="1" width="25%">
+																<ResponsiveScale tickmarksBetweenLabels="1"/>
+															</Slider>
+														</items>
+													</VBox>
+												</content>
+											</IconTabFilter>
+										</items>
+									</IconTabBar>
+								</content>
+							</Panel>
+						</sap.ui.layout:content>
+					</sap.ui.layout:SplitPane>
+				</sap.ui.layout:panes>
+			</sap.ui.layout:PaneContainer>
+		</sap.ui.layout:rootPaneContainer>
+	</sap.ui.layout:ResponsiveSplitter>
+	<FlexBox width="100%" id="box1" direction="RowReverse">
+		<items>
+			<Button xmlns="sap.m" text="Close" id="button0_1571817295092"/>
+			<Button xmlns="sap.m" text="Save" id="button1_1571817300143"/>
+		</items>
+	</FlexBox>
+</mvc:View>
